@@ -45,9 +45,15 @@
     
   </div>
 
-  <div class="buttonContainer"> <!-- TODO: Tengo que hacer la funcion del boton-->
-    <button>Imprimir etiqueta</button>
+  <div class="buttonContainer">
+    <button id="btnImprimir">Imprimir etiqueta</button>
   </div>
 
+  <script>
+    document.getElementById("btnImprimir").addEventListener("click", function() {
+      window.print();
+    });
+  </script>
+  
 </body>
 </html>

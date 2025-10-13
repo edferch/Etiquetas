@@ -151,7 +151,38 @@ button {
 }
 
 @media print {
+  /* Ocultar el botón */
   .buttonContainer {
     display: none;
+  }
+
+  /* Forzar tamaño de página */
+  @page {
+    size: 16cm 10.5cm; /* ancho x alto */
+    margin: 0;         /* sin márgenes extra */
+  }
+
+  body {
+    margin: 0;
+    background: none;
+    display: block; /* quitar flex en impresión */
+  }
+
+  /* Solo imprimir la etiqueta */
+  body * {
+    visibility: hidden;
+  }
+
+  .etiqueta, .etiqueta * {
+    visibility: visible;
+  }
+
+  .etiqueta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16cm;
+    height: 10.5cm;
+    border: none; /* opcional: quitar borde guía */
   }
 }
