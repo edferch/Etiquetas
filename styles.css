@@ -10,9 +10,9 @@ body {
 
 .etiqueta {
   position: relative;
-  background-color: #ffffff;
-  width: 16cm;
-  height: 10.5cm;
+  background-color: #ff0000;
+  width: 15cm;   /* 🔹 ancho reducido */
+  height: 9.5cm; /* 🔹 alto reducido */
   padding: 0;
   box-sizing: border-box;
   border: 2px dashed #9e9e9e;
@@ -58,9 +58,9 @@ body {
 }
 
 .cuadrado-inferior {
-  width: 4.3cm;
-  height: 4.3cm;
-  top: 5cm;
+  width: 4cm;    /* 🔹 ajustado proporcionalmente */
+  height: 4cm;   /* 🔹 ajustado proporcionalmente */
+  top: 4.7cm;    /* 🔹 movido un poco arriba por el tamaño menor */
   left: 0.7cm;
   background-color: #ffffff;
   display: flex;
@@ -96,19 +96,18 @@ body {
 
 .inferior {
   position: relative;
-  top: 5cm;
-  left: 6cm;
-  width: 9.5cm;
+  top: 4.7cm;  /* 🔹 bajado ligeramente para mantener proporción */
+  left: 5.5cm; /* 🔹 ajustado al nuevo ancho */
+  width: 9cm;
   display: flex;
   align-items: flex-start;
-
 }
 
 .info-inferior {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  width: 9.5cm;
+  gap: 20px;
+  width: 9cm;
 }
 
 .campo {
@@ -158,17 +157,16 @@ button {
 
   /* Forzar tamaño de página */
   @page {
-    size: 16cm 10.5cm; /* ancho x alto */
-    margin: 0;         /* sin márgenes extra */
+    size: 15cm 9.5cm; /* 🔹 nuevo tamaño exacto */
+    margin: 0;
   }
 
   body {
     margin: 0;
     background: none;
-    display: block; /* quitar flex en impresión */
+    display: block;
   }
 
-  /* Solo imprimir la etiqueta */
   body * {
     visibility: hidden;
   }
@@ -181,8 +179,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 16cm;
-    height: 10.5cm;
-    border: none; /* opcional: quitar borde guía */
+    width: 15cm;
+    height: 9.5cm;
   }
 }
