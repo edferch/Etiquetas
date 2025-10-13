@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JD Textiles, S.A. | Plantilla</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!--*Esta es la etiqueta completa-->
+  <div class="etiqueta"> 
+    <h2 class="titulo">JD Textiles S.A.</h2>
+    <p class="encabezado1">Plazuela de Santa Ana # 55<br>Aldea Santa Ana<br>La Antigua G., Sacatepéquez<br>Guatemala, C.A.</p>
+    <p class="encabezado2">TO: CENTRAL AMERICAN MFG, CORP <br>217 N.E. 4TH AVENUE <br>DELRAY BEACH, FL 33483</p>
+    <hr class="linea-nombre"> 
+
+    <div class="cuadrado-inferior">
+      <div class="roll-label">ROLL #</div>
+      <input type="text" class="roll-input" placeholder=" " id="rollInput">
+    </div>
+
+    <div class="inferior">
+      <div class="info-inferior">
+        <div class="campo">
+          <label for="job" class="label">JOB:</label>
+          <input type="text" id="job" class="linea-info-input">
+        </div>
+        <div class="campo">
+          <label for="material" class="label">MATERIAL:</label>
+          <input type="text" id="material" class="linea-info-input">
+        </div>
+        <div class="campo">
+          <label for="dimensions" class="label">DIMENSIONS:</label>
+          <input type="text" id="dimensions" class="linea-info-input">
+        </div>
+        <div class="campo-flex">
+          <label for="weight" class="label">WEIGHT:</label>
+          <input type="text" id="weight" class="linea-info-input" style="width: 2.5cm;">
+          <label for="pounds" class="label">POUNDS:</label>
+          <input type="text" id="pounds" class="linea-info-input" style="width: 2.5cm;">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="buttonContainer"> <!-- TODO: Tengo que hacer la funcion del boton-->
+    <button>Imprimir etiqueta</button>
+  </div>
+
+</body>
+</html>
