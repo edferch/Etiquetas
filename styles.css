@@ -11,8 +11,8 @@ body {
 .etiqueta {
   position: relative;
   background-color: #ff0000;
-  width: 15cm;   /* 🔹 ancho reducido */
-  height: 9.5cm; /* 🔹 alto reducido */
+  width: 15cm; 
+  height: 9.5cm; 
   padding: 0;
   box-sizing: border-box;
   border: 2px dashed #9e9e9e;
@@ -58,9 +58,9 @@ body {
 }
 
 .cuadrado-inferior {
-  width: 4cm;    /* 🔹 ajustado proporcionalmente */
-  height: 4cm;   /* 🔹 ajustado proporcionalmente */
-  top: 4.7cm;    /* 🔹 movido un poco arriba por el tamaño menor */
+  width: 4cm;
+  height: 4cm;
+  top: 4.7cm; 
   left: 0.7cm;
   background-color: #ffffff;
   display: flex;
@@ -150,14 +150,12 @@ button {
 }
 
 @media print {
-  /* Ocultar el botón */
   .buttonContainer {
     display: none;
   }
 
-  /* Forzar tamaño de página */
   @page {
-    size: 15cm 9.5cm; /* 🔹 nuevo tamaño exacto */
+    size: 15cm 9.5cm; 
     margin: 0;
   }
 
