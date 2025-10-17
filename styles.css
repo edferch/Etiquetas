@@ -10,7 +10,7 @@ body {
 
 .etiqueta {
   position: relative;
-  background-color: #ff0000;
+  background-color: #ffffff;
   width: 15cm; 
   height: 9.5cm; 
   padding: 0;
@@ -154,6 +154,8 @@ button {
     display: none;
   }
 
+
+
   @page {
     size: 15cm 9.5cm; 
     margin: 0;
@@ -179,5 +181,6 @@ button {
     left: 0;
     width: 15cm;
     height: 9.5cm;
+    border: none;
   }
 }
